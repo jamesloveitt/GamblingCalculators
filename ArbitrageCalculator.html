@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+	<script src="calculator.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset='UTF-8'>
+</head>
+<body>
+	<div class="header">
+		<div class="header-inner">
+			<h1 id = "title">
+				Arbitrage Calculator
+			</h1>
+		</div>       
+	</div>
+	<div class="content">
+		<div class="sidebar left">
+			<div class="sidebar-inner">
+				<ul id = "navigation">
+					<li><a href ="ArbitrageCalculator.html">Home</a></li>
+					<li><a href ="what-is-an-arb.html">What is an Arb?</a></li>
+					<li><a href ="where-can-I-arb.html">Where can I Arb?</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content-inner">
+			<div class = "content-one">
+				<div class = "content-one-one">
+					<h2>
+						Capital
+					</h2>
+					<input id = "capital" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()">
+					<h2>
+						Odds Format
+					</h2>
+					<select id ="systemselect" onchange="changeSystem()">
+						<option>Decimal</option>
+						<option>Fractional</option>
+						<option>American</option>
+					</select>
+				</div>
+				<div class = "content-one-two">
+					<h2 id="how-work">
+						How does it work?
+					</h2>
+					<ul id = "how-to">
+						<li>Enter your available capital</li>
+						<li>Select your preferred odds format.</li>
+						<li>Enter the best available odds for each outcome.</li>
+						<li>The stakes to max profit will be listed parallel to each outcome.</li>
+					</ul>
+				</div>
+			</div>
+			<div class = "content-two" id="odds">
+				<table>
+					<tr>
+						<th>
+							<h2>
+								Odds
+							</h2>
+						</th>
+						<th>
+							<h2>
+								Stakes
+							</h2>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds0" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet0" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds1" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet1" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds2" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet2" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds3" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet3" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds4" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet4" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+					<tr>
+						<th>
+							<input id = "odds5" type="number" min="0.00" max="999999999" value="0.00" onkeyup="outputBets()"><br>
+						</th>
+						<th>
+							<input id = "bet5" type="number" value="0.00" min="0.00" max="999999999" readonly><br>
+						</th>
+					</tr>
+				</table>
+			</div>
+			<div class = "content-three">
+				<div class ="content-three-one">
+					<h2>
+						Profit(%)
+					</h2>
+					<h1 id = "profitpercent">
+						0%
+					</h1>
+				</div>
+				<div class = "content-three-two">
+					<h2>
+						Profit(RAW)
+					</h2>
+					<h1 id ="rawprofit">
+						$0.00
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar right">
+			<div class="sidebar-inner"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-inner">
+			<a href="contact-us.html">Contact Us</a>
+		</div>
+	</div>
+</body>
+</html>

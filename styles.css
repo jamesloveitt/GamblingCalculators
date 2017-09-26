@@ -1,0 +1,172 @@
+/* Temp styles */
+.header, .sidebar, .content, .footer { 
+
+}
+.content, .sidebar, .footer { border-top: none; }
+.sidebar.right { border-right: none; }
+.sidebar.left { border-left: none; }
+/* Core styles */
+.header {
+    position: relative; /* needed for stacking */
+    height: 15%;
+    width:100%;
+    background-color: #8FBC8F;
+
+
+}
+.content {
+    position: relative; /* needed for stacking */
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    background-color: #C1FFC1;
+}
+.sidebar {
+    position: relative; /* needed for stacking */
+    height: 100%;
+    border-top: none;
+}
+.sidebar.left { 
+    float: left;
+    width:15%; 
+    background-color: #698B69;
+}
+.sidebar.left:after,
+.sidebar.right:after {
+    clear: both;
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+}
+.sidebar.right { 
+    float: right;
+    width:15%;
+}
+.footer {
+    position: relative; /* needed for stacking */
+    width: 100%;
+    height: 10%;
+    background-color: #8FBC8F;
+    text-align: center;
+}
+
+.content-zero {
+    width:70%;
+    height: 100%;
+    float: left;
+}
+.content-one {
+    width:22%;
+    height: 100%;
+    float: left;
+}
+.content-two {
+    width:26%;
+    height: 100%;
+    float: left;
+}
+.content-three {
+    width:22%;
+    height: 100%;
+    float: left;
+
+}
+
+.content-one-one {
+    width:100%;
+    height: 40%;
+    float: left;
+    background: #B4EEB4;
+}
+.content-one-two {
+    width:100%;
+    height: 60%;
+    float: left;
+    background: #9BCD9B;
+}
+.content-three-one {
+    width:100%;
+    height: 50%;
+    float: left;
+    background:#B4EEB4;
+}
+.content-three-two {
+    width:100%;
+    height: 50%;
+    float: left;
+    background: #9BCD9B;
+}
+
+
+html, body{
+    height:100%;
+    width:100%;
+    min-height: 650px;
+    min-width: 800px;
+    font-family: "Verdana";
+    margin: 0;
+}
+
+
+
+input[type=number]{
+    font-size:calc(9px + 1vmin);
+}
+
+input[type=text]{
+    font-size:calc(9px + 1vmin);
+}
+
+h1 {
+    font-size:calc(14px + 3vmin);
+   
+}
+#title{
+    padding-left: 6vmin;
+    padding-top: 3vmin
+}
+
+h2 {
+    font-size:calc(12px + 1vmin);
+}
+#navigation{
+    font-size:calc(9px + 1vmin);
+}
+#how-to{
+    font-size:calc(5px + 1vmin);
+    text-align:left;
+
+}
+
+
+li {
+    padding-top: 1vmin;
+}
+
+select {
+    font-size:calc(9px + 1vmin);
+}
+
+table {
+    padding-top: 2.5vmin;
+    margin: 0 auto; 
+  }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+
+@media only screen and (max-width: 800px, min-height: 800px) {
+    #how-to{
+        font-size:calc(2px + 1vmin);
+    }
+
+
+}
+
